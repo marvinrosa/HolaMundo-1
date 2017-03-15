@@ -5,4 +5,9 @@
     <string name="parte_saludo">Hola</string>
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
+    <string name="parte_saludo2">Bienvenido a Esta Aplicación !!</string>
+
+    <string name="error_1">Digite el Nombre</string>
+    <string name="error_2">Digite el Apellido</string>
+    <string name="bienvenido"> Bienvenido</string>
 </resources>

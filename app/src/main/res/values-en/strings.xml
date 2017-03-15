@@ -6,4 +6,9 @@
     <string name="titulo">Something</string>
     <string name="apellido">Lastname</string>
     <string name="nombre">Name</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="mensaje">Welcome this aplication !!</string>
+    <string name="parte_saludo2">Welcome this aplication !!</string>
+    <string name="error_1">Type your name</string>
+    <string name="error_2">Type your LastName</string>
 </resources>
