@@ -18,14 +18,14 @@ public class Principal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
 
         cajaNombre = (EditText)findViewById(R.id.txtNombre);
-        cajaMensaje = (TextView)findViewById(R.id.lblMensaje);
+       // cajaMensaje = (TextView)findViewById(R.id.lblMensaje);
     }
 
 
     public void saludar(View v){
         String aux;
-        aux = cajaNombre.getText().toString();
-        cajaMensaje.setText(getResources().getString(R.string.parte_saludo)+" "+aux);
+       // aux = cajaNombre.getText().toString();
+        //cajaMensaje.setText(getResources().getString(R.string.parte_saludo)+" "+aux);
 
     }
 }
