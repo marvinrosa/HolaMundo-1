@@ -40,14 +40,37 @@ public class Principal extends AppCompatActivity {
         b.putString("Apellido",apell);
 
 
-        i.putExtras(b);
-
-        startActivity(i);
+        if(validar())
+        {
+            //Tomo el valor que la persona ingresó tanto en nombre como en apellido
+            nomb = cajaNombre.getText().toString();
+            apell = cajaApellido.getText().toString();
+           //Encapsulo los valores previamente tomados
+             b.putString("Nombre", nomb);
+            b.putString("Apellido", apell);
+            //Le paso al intent todos los datos en forma encapsulada con el bundle
+                   i.putExtras(b);
+            //Arranco la actividad que le intent me diga
+             startActivity(i);
+        }
 
     }
 
     public boolean validar(){
-        return  true;
+        if(cajaNombre.getText().toString().isEmpty())
+        {
+            cajaNombre.setError(getResources().getString(R.string.error_1));
+             // Toast.makeText(this,"Digite por favor el nombre",Toast.LENGTH_SHORT).show();
+                return false;
+        }
+         if (cajaApellido.getText().toString().isEmpty())
+         {
+            cajaApellido.setError(getResources().getString(R.string.error_2));
+             //Toast.makeText(this,"Digite por favor el Apellido",Toast.LENGTH_SHORT).show();
+                return false;
+         }
+          return true;
+
     }
 }
 
