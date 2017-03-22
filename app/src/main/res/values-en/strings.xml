@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">HolaMundo</string>
     <string name="parte_saludo">Hello</string>
-    <string name="saludar">Hi</string>
+    <string name="saludar">Greet</string>
     <string name="titulo">Something</string>
     <string name="apellido">Lastname</string>
     <string name="nombre">Name</string>
@@ -11,4 +11,13 @@
     <string name="parte_saludo2">Welcome this aplication !!</string>
     <string name="error_1">Type your name</string>
     <string name="error_2">Type your LastName</string>
+    <string name="borrar">Clear</string>
+    <string name="casado">Married</string>
+    <string name="divorciado">Divorced</string>
+    <string name="estadoCivil">Civil Status</string>
+    <string name="genero">Genre</string>
+    <string name="soltero">Single</string>
+    <string name="femenino">Female</string>
+    <string name="masculino">Male</string>
+    <string name="datos">Your personal Information is:</string>
 </resources>
