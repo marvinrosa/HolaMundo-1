@@ -10,49 +10,119 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.soporte.holamundo.Principal">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="1"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:gravity="center_horizontal"
-            android:text="@string/titulo"
-            android:textAppearance="@style/TextAppearance.AppCompat"
-            android:fontFamily="sans-serif"
-            android:textSize="30sp"
-            android:textStyle="normal|bold" />
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/txtNombre"
-            android:hint="@string/nombre" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:gravity="center_horizontal"
+                android:text="@string/titulo"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:fontFamily="sans-serif"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/txtApellido"
-            android:hint="@string/apellido" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtNombre"
+                android:hint="@string/nombre" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/cmdBoton"
-            android:text="@string/saludar"
-            android:onClick="Saludar"
-            android:visibility="visible" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtApellido"
+                android:hint="@string/apellido" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="18sp"
+                android:text="@string/genero" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmbGenero" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="18sp"
+                android:text="@string/estadoCivil" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="119dp" >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:id="@+id/r1"
+                    android:text="@string/soltero" />
+
+                <RadioButton
+                    android:text="@string/casado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2" />
+
+                <RadioButton
+                    android:text="@string/divorciado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton3" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <Button
+                    android:text="@string/borrar"
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cmdBorrar"
+                    android:layout_weight="0.22" />
+
+                <Button
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cmdBoton"
+                    android:text="@string/saludar"
+                    android:onClick="Saludar"
+                    android:visibility="visible"
+                    android:layout_weight="0.36" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

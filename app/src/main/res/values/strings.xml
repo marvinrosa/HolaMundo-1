@@ -10,4 +10,10 @@
     <string name="error_1">Digite el Nombre</string>
     <string name="error_2">Digite el Apellido</string>
     <string name="bienvenido"> Bienvenido</string>
+    <string name="estadoCivil">Estado Civil</string>
+    <string name="soltero">Soltero (a)</string>
+    <string name="casado">Casado (a)</string>
+    <string name="divorciado">Divorciado (a)</string>
+    <string name="borrar">Borrar</string>
+    <string name="genero">Genero</string>
 </resources>
